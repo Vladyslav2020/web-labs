@@ -1,0 +1,38 @@
+{
+  "name": "web-labs",
+  "version": "1.0.0",
+  "description": "Web-labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.js --ignore-path .gitignore",
+    "lint:fix": "eslint **/*.js --fix --ignore-path .gitignore",
+    "format": "prettier --check . --ignore-path ./.prettierignore",
+    "format:fix": "prettier --write . --ignore-path ./.prettierignore",
+    "stylelint": "stylelint **/*.css --ignore-path .gitignore",
+    "stylelint:fix": "stylelint **/*.css --fix --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vladyslav2020/web-labs.git"
+  },
+  "author": "Vlad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vladyslav2020/web-labs/issues"
+  },
+  "homepage": "https://github.com/Vladyslav2020/web-labs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@nodeart/eslint-plugin": "^1.3.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.4.0",
+    "sonarjs": "^1.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
